@@ -1,0 +1,271 @@
+
+\documentclass{beamer}
+\usepackage{graphicx}
+
+\begin{document}
+
+\title{Probability and Statistics}
+\subtitle{Understanding the Basics}
+\author{DRME}
+\date{\today}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+\begin{frame}{The Set of All Possible Events}
+  \begin{itemize}
+    \item Overview of the concept:
+      \begin{itemize}
+        \item A fundamental concept in probability theory.
+        \item Represents all potential outcomes or occurrences in an experiment or situation.
+      \end{itemize}
+    \item Significance in probability theory:
+      \begin{itemize}
+        \item Forms the sample space for a given experiment.
+        \item Essential for defining probabilities of specific events.
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Example: Coin Toss}
+  \begin{itemize}
+    \item Consider the experiment of tossing a fair coin.
+    \item The set of all possible events: \{Heads, Tails\}.
+    \item Each outcome in the set is a possible event.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Example: Rolling a Die}
+  \begin{itemize}
+    \item Experiment: Rolling a six-sided die.
+    \item The set of all possible events: \{1, 2, 3, 4, 5, 6\}.
+    \item Each face of the die represents a possible event.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Coin Flips: Why You Should Care}
+  \begin{itemize}
+    \item Illustration using coin flips.
+    \item Linking the concept to real-world scenarios.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Probability: Outside or Inside the Head}
+  \begin{itemize}
+    \item Outside the head: Long-run relative frequency.
+    \item Inside the head: Subjective belief.
+    \item Probabilities assign numbers to possibilities.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Outside the Head: Long-run Relative Frequency}
+  \begin{itemize}
+    \item Simulating a long-run relative frequency.
+    \item Deriving a long-run relative frequency.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Inside the Head: Subjective Belief}
+  \begin{itemize}
+    \item Calibrating a subjective belief by preferences.
+    \item Describing a subjective belief mathematically.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Probabilities Assign Numbers to Possibilities}
+  \begin{itemize}
+    \item Probabilities are assigned to different outcomes to quantify uncertainty.
+    \item The assignment of probabilities is a fundamental concept in probability theory.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Understanding How Probabilities Are Assigned}
+  \begin{itemize}
+    \item Probabilities are numerical measures representing the likelihood of events.
+    \item Assigning probabilities involves assessing the chance of different outcomes.
+    \item Probabilities are expressed as values between 0 and 1, where 0 indicates impossibility, 1 indicates certainty, and values in between represent varying degrees of likelihood.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Example: Coin Toss}
+  \begin{itemize}
+    \item Consider a fair coin toss.
+    \item There are two possible outcomes: heads (H) or tails (T).
+    \item Since the coin is fair, the probability of getting heads is 0.5, and the probability of getting tails is also 0.5.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Example: Rolling a Six-sided Die}
+  \begin{itemize}
+    \item Suppose you roll a standard six-sided die.
+    \item Each face has an equal chance of landing face up.
+    \item The probability of rolling a specific number, say 3, is \( \frac{1}{6} \) because there are six possible outcomes.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Example: Drawing a Card from a Deck}
+  \begin{itemize}
+    \item Consider drawing a single card from a standard deck of 52 playing cards.
+    \item The probability of drawing an Ace is \( \frac{4}{52} \) since there are four Aces in the deck.
+    \item The probability of drawing a red card is \( \frac{26}{52} \) since half of the cards are red.
+  \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Probability Distributions}
+  \begin{itemize}
+    \item Overview of Probability Distributions [[see distributions.pdf]].
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Discrete Distributions: Probability Mass}
+  \begin{itemize}
+    \item Definition: Probability mass function for discrete distributions.
+    \item Examples:
+      \begin{itemize}
+        \item Bernoulli distribution.
+        \item Binomial distribution.
+        \item Poisson distribution.
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Continuous Distributions: Rendezvous with Density}
+  \begin{itemize}
+    \item Definition: Probability density function for continuous distributions.
+    \item Examples:
+      \begin{itemize}
+        \item Uniform distribution.
+        \item Exponential distribution.
+        \item Normal distribution.
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\begin{center}
+  \includegraphics[page=1,width=0.65\textwidth]{distributions.pdf}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+  \includegraphics[page=2,width=0.65\textwidth]{distributions.pdf}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+  \includegraphics[page=3,width=0.65\textwidth]{distributions.pdf}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}{Properties of Probability Density Functions}
+  \begin{itemize}
+    \item Understanding the properties that characterize probability density functions.
+    \item Emphasis on normalization and non-negativity.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{The Normal Probability Density Function}
+  \begin{itemize}
+    \item Special focus on the normal distribution.
+    \item Shape, mean, and standard deviation.
+    \item Real-world examples: Height, IQ scores.
+  \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Mean and Variance of a Distribution}
+  \begin{itemize}
+    \item Mean as minimized variance.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Highest Density Interval (HDI)}
+  \begin{itemize}
+    \item Understanding the concept of HDI.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Concept of HDI}
+  \begin{itemize}
+    \item The Highest Density Interval (HDI) is a statistical concept used in probability distributions.
+    \item It provides a range of values within which a specified portion of the probability density function lies.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Why HDI Matters}
+  \begin{itemize}
+    \item HDI is valuable for summarizing uncertainty about a parameter.
+    \item It's particularly useful when dealing with complex distributions or posterior distributions from Bayesian analysis.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Calculating HDI}
+  \begin{itemize}
+    \item HDI is often calculated numerically using methods such as Markov Chain Monte Carlo (MCMC).
+    \item It represents the narrowest interval that contains a certain predefined probability mass.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Interpretation of HDI}
+  \begin{itemize}
+    \item The width of the HDI reflects the precision of our knowledge about the parameter.
+    \item A narrow HDI indicates more precise estimation, while a wider HDI suggests greater uncertainty.
+  \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Two-Way Distributions}
+  \begin{itemize}
+    \item Conditional Probability
+    \item Independence of Attributes
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Conditional Probability}
+  Conditional probability is the probability of an event occurring given that another event has already occurred. It is denoted by \( P(A | B) \), representing the probability of event A given that event B has occurred. The formula for conditional probability is:
+  \[ P(A | B) = \frac{P(A \cap B)}{P(B)} \]
+  where \( P(A \cap B) \) is the probability of both events A and B occurring, and \( P(B) \) is the probability of event B occurring.
+\end{frame}
+
+\begin{frame}{Independence of Attributes}
+  Two events, A and B, are considered independent if the occurrence or non-occurrence of one event does not affect the probability of the other event. Mathematically, events A and B are independent if:
+  \[ P(A \cap B) = P(A) \cdot P(B) \]
+  In other words, the joint probability of A and B equals the product of their individual probabilities. If this equation holds, A and B are independent; otherwise, they are dependent.
+\end{frame}
+
+
+\begin{frame}{Conditional Probability}
+  \begin{itemize}
+    \item Conditional Probability: \( P(A | B) = \frac{P(A \cap B)}{P(B)} \)
+    \item Example:
+      \begin{itemize}
+        \item Suppose you have a deck of cards. Let \( A \) be the event of drawing a red card, and \( B \) be the event of drawing a heart. The conditional probability of drawing a red card given that it is a heart is:
+        \[ P(A | B) = \frac{P(A \cap B)}{P(B)} = \frac{\frac{1}{2}}{\frac{1}{4}} = \frac{2}{1} = 2 \]
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Independence of Attributes}
+  \begin{itemize}
+    \item Independence of Attributes: \( P(A \cap B) = P(A) \cdot P(B) \)
+    \item Example:
+      \begin{itemize}
+        \item Consider two events: \( C \) is the event of rolling a 4 on a six-sided die, and \( D \) is the event of getting heads on a fair coin toss. If \( C \) and \( D \) are independent, then:
+        \[ P(C \cap D) = P(C) \cdot P(D) = \frac{1}{6} \cdot \frac{1}{2} = \frac{1}{12} \]
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+
+\end{document}
