@@ -40,3 +40,19 @@ format:
 ##  Kentaro Matsuura (2023). Bayesian Statistical Modeling with Stan, R, and ... {Note: this is an interesting approach/book, in some instances is rather naive and quite relaxed, while in some instances is complex, and slow to follow}
 -  [gitHub](https://github.com/MatsuuraKentaro/Bayesian_Statistical_Modeling_with_Stan_R_and_Python) 
 
+
+
+## Statistical rethinking
+
+[site](https://xcelab.net/rm/statistical-rethinking/)
+[Julia code](https://shmuma.github.io/rethinking-2ed-julia/)
+[Videos](https://www.youtube.com/playlist?list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus)
+
+
+## MacCarthy 
+[Preface](https://assets.cambridge.org/97805216/15594/frontmatter/9780521615594_frontmatter.pdf)
+
+
+##  Josh Cook
+[site](https://github.com/jhrcook/bayesian-data-analysis-course)
+[site](https://github.com/jhrcook/statistical-rethinking)
