@@ -1,0 +1,37 @@
+
+---
+title: Bayesian Data Analysis Resources
+date: 2024-01-20
+
+format:
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+---
+
+
+## Quarto Documentation
+
+- [Quarto Documentation](https://r4ds.hadley.nz/quarto.html)
+
+## Kruschke 2015
+
+- [Kruschke's Bayesian Data Analysis in R (PDF)](https://nyu-cdsc.github.io/learningr/assets/kruschke_bayesian_in_R.pdf)
+- [Author's Site](https://sites.google.com/site/doingbayesiandataanalysis/software-installation)
+- [Original Course](https://jkkweb.sitehost.iu.edu/jkkteach/P533/#Overview)
+
+## GitHub Repositories
+
+- [GitHub for the book (misc. authors)](https://github.com/boboppie/kruschke-doing_bayesian_data_analysis)
+- [Python Implementation](https://github.com/JWarmenhoven/DBDA-python)
+- [TidyVerse Implementation](https://github.com/ASKurz/Doing-Bayesian-Data-Analysis-in-brms-and-the-tidyverse)
+
+## Year 2021
+
+- [Bayesian Analysis Reporting Guidelines](https://pubmed.ncbi.nlm.nih.gov/34400814/)
+
+## Bayesian Data Analysis in Ecology with R and Stan
+
+- **Authors:** Fränzi Korner-Nievergelt, Tobias Roth, Stefanie von Felten, Jerôme Guélat, Bettina Almasi, Pius Korner-Nievergelt
+- [BDAEcology](https://tobiasroth.github.io/BDAEcology/)
