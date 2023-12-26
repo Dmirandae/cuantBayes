@@ -35,3 +35,8 @@ format:
 
 - **Authors:** Fränzi Korner-Nievergelt, Tobias Roth, Stefanie von Felten, Jerôme Guélat, Bettina Almasi, Pius Korner-Nievergelt
 - [BDAEcology](https://tobiasroth.github.io/BDAEcology/)
+
+
+##  Kentaro Matsuura (2023). Bayesian Statistical Modeling with Stan, R, and ... {Note: this is an interesting approach/book, in some instances is rather naive and quite relaxed, while in some instances is complex, and slow to follow}
+-  [gitHub](https://github.com/MatsuuraKentaro/Bayesian_Statistical_Modeling_with_Stan_R_and_Python) 
+
