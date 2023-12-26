@@ -1,5 +1,5 @@
 ---
-title: Likelihood
+title: Markov Chain Monte Carlo
 author: D. Miranda-Esquivel
 date: 2024-01-20
 
@@ -15,27 +15,29 @@ format:
 
 - In this section, we will review:
 
--- basic likelihood concepts.
+-- the Markov Chain Monte Carlo
 
 
 
 ## Key Concepts
 
-- Likelihood
-
+- Sampling
+- Markov Chain Monte Carlo
 
 ## Activities 
 
 
 - Review: 
 
-Chapter 4: Likelihood  [@hobbs2015] 
+Chapter 7: Markov Chain Monte Carlo [@hobbs2015] 
+Chapter 7: Markov Chain Monte Carlo [@kruscke2015]
 
 ## Readings
 
 ### Basic readings
 
--  **Chapter 4**  [@hobbs2015] 
+-  **Chapter 5**  [@hobbs2015] 
+-  **Chapter 5**  [@kruscke2015]
 
 
 ### Should read
