@@ -267,5 +267,169 @@
 \end{frame}
 
 
+\begin{frame}{Joint Probability}
+  \begin{itemize}
+    \item Definition: The probability of the occurrence of two or more events simultaneously.
+    \item Denoted as \( P(A \cap B) \) for events \( A \) and \( B \).
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Joint Probability Example}
+  \begin{itemize}
+    \item Consider rolling a six-sided die.
+    \item Let \( A \): The event of rolling an even number.
+    \item Let \( B \): The event of rolling a number greater than 3.
+    \item Find \( P(A \cap B) \).
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Calculating Joint Probability}
+  \begin{itemize}
+    \item Using the formula: \( P(A \cap B) = P(A) \times P(B|A) \)
+    \item \( P(A) \): Probability of event \( A \)
+    \item \( P(B|A) \): Probability of event \( B \) given that event \( A \) has occurred.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Joint Probability Example}
+  \begin{itemize}
+    \item \( P(A) \): Probability of rolling an even number = \( \frac{3}{6} = \frac{1}{2} \)
+    \item \( P(B|A) \): Probability of rolling a number greater than 3 given that an even number is rolled = \( \frac{2}{3} \)
+    \item \( P(A \cap B) = \frac{1}{2} \times \frac{2}{3} = \frac{1}{3} \)
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Joint Probability Interpretation}
+  \begin{itemize}
+    \item Joint probability provides a measure of the likelihood of multiple events occurring together.
+    \item Important in understanding relationships between events.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Applications}
+  \begin{itemize}
+    \item Finance: Probability of a stock both gaining value and exceeding a certain threshold.
+    \item Medicine: Probability of a patient having multiple symptoms simultaneously.
+    \item Weather: Probability of rain and high winds occurring together.
+  \end{itemize}
+\end{frame}
+
+
+\section{Rules of Factoring Joint Probabilities}
+
+\begin{frame}{Rule 1: Product Rule}
+  \begin{block}{Product Rule}
+    \[
+      P(A \cap B) = P(A|B) \cdot P(B)
+    \]
+    \begin{itemize}
+      \item Interpretation: Probability of both events A and B occurring.
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Example: Genetic Inheritance}
+  \begin{itemize}
+    \item Event A: Offspring having a specific genetic trait.
+    \item Event B: Parent carrying the gene for the trait.
+    \item Using the product rule to calculate the joint probability.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Example: Species Coexistence in Ecology}
+  \begin{itemize}
+    \item Event A: Presence of species X in an ecosystem.
+    \item Event B: Availability of a specific environmental condition.
+    \item Applying the product rule to understand coexistence probabilities.
+  \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Rule 2: Chain Rule}
+  \begin{block}{Chain Rule Formula}
+    \[
+      P(A \cap B \cap C) = P(A|B \cap C) \cdot P(B|C) \cdot P(C)
+    \]
+  \end{block}
+
+  \begin{itemize}
+    \item The formula for three events, generalizable to more variables.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Application in Biology}
+  \begin{itemize}
+    \item \textbf{Example 1: Gene Expression}
+      \begin{itemize}
+        \item $A$: Gene activation, $B$: Cellular environment, $C$: External signals.
+        \item Probability of gene activation influenced by the cellular environment {\bf{AND}} external signals.
+      \end{itemize}
+
+    \item \textbf{Example 2: Ecosystem Dynamics}
+      \begin{itemize}
+        \item $A$: Predation occurrence, $B$: Prey abundance, $C$: Environmental conditions.
+        \item Probability of predation depends on prey abundance  {\bf{AND}} environmental conditions.
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Generalization}
+  \begin{itemize}
+    \item Rule 2 can be generalized to more variables.
+    \item \textbf{Example 3: Evolutionary Processes}
+      \begin{itemize}
+        \item $A$: Adaptation, $B$: Genetic variation, $C$: Selection pressure.
+        \item Probability of adaptation influenced by genetic variation  {\bf{AND}} selection pressure.
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Rule 3: Marginalization}
+  \begin{block}{Marginal Probability}
+    \[
+      P(A) = \sum_{B} P(A \cap B)
+    \]
+    Interpretation and practical implications.
+  \end{block}
+\end{frame}
+
+
+\begin{frame}{Example: Marginalization}
+  \begin{itemize}
+    \item Consider a joint probability distribution table representing the occurrence of two traits in a population.
+    \item Traits: Trait A (dominant/recessive) and Trait B (present/absent).
+    \item Joint probabilities are given in the table.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Joint Probability Distribution Table}
+  \begin{center}
+    \begin{tabular}{|c|c|c|}
+      \hline
+      & Trait B Present & Trait B Absent \\
+      \hline
+      Trait A Dominant & $P(A, B)$ & $P(A, \neg B)$ \\
+      \hline
+      Trait A Recessive & $P(\neg A, B)$ & $P(\neg A, \neg B)$ \\
+      \hline
+    \end{tabular}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Calculation of Marginal Probabilities}
+  \begin{itemize}
+    \item Marginal probability of Trait A: $P(A) = P(A, B) + P(A, \neg B)$
+    \item Marginal probability of Trait B: $P(B) = P(A, B) + P(\neg A, B)$
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Interpretation}
+  \begin{itemize}
+    \item Marginalization allows us to analyze the probability of individual traits independently.
+    \item This is crucial for understanding the genetic composition of a population.
+  \end{itemize}
+\end{frame}
+
 
 \end{document}
