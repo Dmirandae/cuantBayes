@@ -1,0 +1,56 @@
+---
+title: Review of some general Concepts
+author: D. Miranda-Esquivel
+date: 2024-01-20
+
+format:
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+---
+
+
+# General objective
+
+- In this section, we will review:
+
+-- basic probability concepts and various probability distributions.
+
+-- some critics ot the use of **p**
+
+
+## Key Concepts
+
+- Probability basics
+
+- Common probability distributions (binomial, dirichlet, gamma, exponential, log-normal)
+
+- Time to say good-bye to **p**
+
+
+## Activities 
+
+
+- Review: Unit 3. Bodine et al and the ASA statement.
+
+- Find a paper in your area of expertise and revise the use of *p*, write down a short analysis (max 1000 words) of the possible ways to solve the problems you might have detected.
+
+
+## Readings
+
+
+### Must read
+
+- **Unit 3. Bodine et al** [Read Online](https://drive.google.com/file/d/1jtas7BKn0ZcJlQ3iobF8ReJ2Wc1BQJZd/view?usp=drive_link)
+
+
+- **ASA statement** [Read Online](https://www.tandfonline.com/doi/full/10.1080/00031305.2019.1583913)
+
+
+### Should read
+
+- **Chapter 5. Sokal & Rohlf**
+
+- **Chapter 1. Anderson's perspective on Science and Experimental design** [Read Online](https://drive.google.com/file/d/1Vng6xtgaa_wHkf0Wb1x48M9q5nS10HkJ/view?usp=sharing)
+
