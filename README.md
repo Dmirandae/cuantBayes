@@ -5,6 +5,6 @@
 ## Software used
 
 - Text files edited using [Emacs](https://www.gnu.org/software/emacs/) 
-- Render with [Quarto](quarto.org) and [Pandoc](https://pandoc.org/)
+- Render with [xelatex](https://tug.org/texlive/) via [Quarto](quarto.org) and [Pandoc](https://pandoc.org/)
 - Most of the code generated using [ChatGPT](https://www.openai.com/)
-
+- [R](https://www.r-project.org/) / [julia](https://julialang.org/) via Emacs
