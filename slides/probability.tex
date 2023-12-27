@@ -196,7 +196,6 @@
 
 \begin{frame}{Concept of HDI}
   \begin{itemize}
-    \item The Highest Density Interval (HDI) is a statistical concept used in probability distributions.
     \item It provides a range of values within which a specified portion of the probability density function lies.
   \end{itemize}
 \end{frame}
@@ -324,9 +323,33 @@
     \]
     \begin{itemize}
       \item Interpretation: Probability of both events A and B occurring.
+      \item or, it expresses the joint probability in terms of the conditional probability of A given B and the marginal probability of B.
     \end{itemize}
   \end{block}
 \end{frame}
+
+
+
+
+
+
+\begin{frame}{Rule 1: Product Rule: Example}
+
+
+  \begin{itemize}
+      \item Consider events A and B representing the outcomes of rolling a fair six-sided die. 
+      \item Let A be the event of getting an even number (2, 4, or 6), and B be the event of getting a number greater than 3 (4, 5, or 6). 
+      \item The probability of A given B is \( P(A|B) = \frac{2}{3} \), and the probability of B is \( P(B) = \frac{1}{2} \).
+      \item Applying the product rule:
+      
+        \begin{itemize}
+			\item \[ P(A \cap B) = \frac{2}{3} \cdot \frac{1}{2} = \frac{1}{3} \]
+		\end{itemize}
+		
+   \end{itemize}
+
+\end{frame}
+
 
 \begin{frame}{Example: Genetic Inheritance}
   \begin{itemize}
@@ -401,6 +424,20 @@
     \item Traits: Trait A (dominant/recessive) and Trait B (present/absent).
     \item Joint probabilities are given in the table.
   \end{itemize}
+\end{frame}
+
+\begin{frame}{Joint Probability Distribution Table}
+  \begin{center}
+    \begin{tabular}{|c|c|c|}
+      \hline
+      & 123 & 456 \\
+      \hline
+      Even  & \only<2>{1} & \only<2>{2}   \\
+      \hline
+      Uneven & \only<2>{2}  & \only<2>{1} \\
+      \hline
+    \end{tabular}
+  \end{center}
 \end{frame}
 
 \begin{frame}{Joint Probability Distribution Table}
