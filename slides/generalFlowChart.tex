@@ -35,4 +35,75 @@
 
 \end{tikzpicture}
 
+\begin{figure}
+  \centering
+  \begin{tikzpicture}[node distance=2cm]
+
+    % Nodes
+    \node (data) [process] {Data};
+    \node (prior) [process, below=of data] {Prior};
+    \node (model) [process, below=of prior] {Model};
+    \node (params) [process, below=of model] {Parameters};
+    \node (likelihood) [process, below=of params] {Likelihood};
+    \node (mcmc) [process, below=of likelihood] {MCMC};
+    \node (posterior) [process, below=of mcmc] {Posterior Probability};
+    \node (hdi) [process, below=of posterior] {HDI};
+
+    % Arrows
+    \draw [arrow] (data) -- (prior);
+    \draw [arrow] (prior) -- (model);
+    \draw [arrow] (model) -- (params);
+    \draw [arrow] (params) -- (likelihood);
+    \draw [arrow] (likelihood) -- (mcmc);
+    \draw [arrow] (mcmc) -- (posterior);
+    \draw [arrow] (posterior) -- (hdi);
+
+  \end{tikzpicture}
+  \caption{Standard Bayesian Analysis Flowchart}
+\end{figure}
+
+
+\begin{tikzpicture}[
+  node distance=2cm,
+  box/.style={
+    draw,
+    rectangle,
+    align=center,
+    minimum height=1.5cm,
+    minimum width=3cm
+  },
+  arrow/.style={
+    ->,
+    >=Stealth,
+    thick
+  },
+  line/.style={
+    thin
+  }
+]
+
+% Nodes
+\node[box] (data) {Data};
+\node[box, below=of data] (prior) {Prior Model};
+\node[box, below=of prior] (params) {Parameters};
+\node[box, below=of params] (likelihood) {Likelihood};
+\node[box, below=of likelihood] (mcmc) {Markov Chain Monte Carlo (MCMC)};
+\node[box, below=of mcmc] (posterior) {Posterior Probability};
+\node[box, below=of posterior] (hdi) {Highest Density Interval (HDI)};
+
+% Arrows
+\draw[arrow] (data) -- (prior);
+\draw[arrow] (prior) -- (params);
+\draw[arrow] (params) -- (likelihood);
+\draw[arrow] (likelihood) -- (mcmc);
+\draw[arrow] (mcmc) -- (posterior);
+\draw[arrow] (posterior) -- (hdi);
+
+% Connecting lines
+\draw[line] (params.west) -- ++(-0.5,0) -- ++(0,3) -| (data.west);
+\draw[line] (posterior.east) -- ++(0.5,0) -- ++(0,-3) -| (hdi.east);
+
+\end{tikzpicture}
+
+
 \end{document}

@@ -1,0 +1,79 @@
+
+
+\begin{frame}{Probability Distribution vs. Likelihood Function}
+  \begin{itemize}
+    \item Key distinction: Treatment of parameters and data.
+    \item In a probability distribution:
+      \begin{itemize}
+        \item Parameter is fixed.
+        \item Data are random variables.
+      \end{itemize}
+    \item In a likelihood function:
+      \begin{itemize}
+        \item Data are fixed.
+        \item Parameters are variable.
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Examining the Relationship Through Plots}
+  \begin{itemize}
+    \item Probability density function with a fixed $\theta$ and varying $y$:
+      \begin{itemize}
+        \item Area under the curve equals 1 (Figure 4.2.1A).
+      \end{itemize}
+    \item Probability density function with fixed $y$ and varying $\theta$:
+      \begin{itemize}
+        \item Likelihood profile obtained (Figure 4.2.1B).
+        \item Area under the curve does not equal 1.
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Relationship for Discrete Data}
+  \begin{itemize}
+    \item Probability mass function $y|\theta$ with fixed $\theta$ and varying $y$:
+      \begin{itemize}
+        \item Sum of probabilities equals 1 (Figure 4.2.1C).
+      \end{itemize}
+    \item Probability mass function with fixed $y$ and varying $\theta$:
+      \begin{itemize}
+        \item Likelihood profile generated (Figure 4.2.1D).
+        \item Sum of probabilities does not equal 1.
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Units of the Likelihood Profile}
+  \begin{itemize}
+    \item Units on the y-axis are arbitrary.
+    \item Can be scaled to any quantity.
+    \item Likelihood profile often scaled so that the peak equals 1.
+    \item Scaling achieved by dividing all likelihoods by the maximum likelihood.
+    \item Does not alter the relationship between likelihood and probability.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Illustration Through Figure 4.2.1}
+  \begin{itemize}
+    \item Figure 4.2.1 visually illustrates the subtle distinction.
+    \item Parameter $\theta$ is not fixed in the likelihood framework.
+    \item Likelihood functions do not define the probability or probability density of $\theta$.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Notation Considerations}
+  \begin{itemize}
+    \item Some authors use $L(\theta; y)$ instead of $L(\theta|y)$.
+    \item Emphasizes that likelihood functions focus on the dependence of parameters on fixed data.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Remarks}
+  \begin{itemize}
+    \item Probability distributions and likelihood functions highlighted through plots.
+    \item Probability and likelihood coincide {\bf{ONLY}} when parameters are treated as fixed.
+  \end{itemize}
+\end{frame}
+
+
