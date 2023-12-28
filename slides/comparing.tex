@@ -1,0 +1,72 @@
+
+\documentclass{beamer}
+
+\title{Hierarchical Tests, hLrT, and Bayes Factors}
+\author{DRME}
+\date{2024 01 20}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Hierarchical Tests}
+  \begin{itemize}
+    \item Hierarchical tests involve a sequence of tests organized in a hierarchical structure.
+    \item They are designed to address complex hypotheses by breaking them down into simpler, nested components.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Example: Hierarchical Tests}
+  \begin{itemize}
+    \item Consider testing the overall effectiveness of a treatment.
+    \item Hierarchical tests can break this down into sub-tests, such as testing for treatment effect in different subgroups.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Hierarchical Likelihood Ratio Tests (hLrT)}
+  \begin{itemize}
+    \item hLrT is a specific type of hierarchical test that uses likelihood ratio tests.
+    \item It provides a systematic way to test nested hypotheses in a hierarchical fashion.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{hLrT Procedure}
+  \begin{enumerate}
+    \item Start with the full model representing the most complex hypothesis.
+    \item Test nested hypotheses by comparing the likelihood of the nested model to the likelihood of the full model.
+    \item Continue testing nested models until the simplest hypothesis is reached.
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{Example: hLrT}
+  \begin{itemize}
+    \item Apply hLrT to assess the significance of various components in a regression model.
+    \item Stepwise test nested hypotheses related to individual predictors or groups of predictors.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Bayes Factors}
+  \begin{itemize}
+    \item Bayes Factors provide a measure of the evidence for one hypothesis over another.
+    \item They involve comparing the likelihood of the data under different hypotheses, incorporating prior beliefs.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Interpretation of Bayes Factors}
+  \begin{itemize}
+    \item A Bayes Factor greater than 1 favors one hypothesis over another.
+    \item A Bayes Factor less than 1 favors the other hypothesis.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Example: Bayes Factors}
+  \begin{itemize}
+    \item Apply Bayes Factors to compare two competing models for explaining a phenomenon.
+    \item Evaluate the evidence in favor of a simpler model over a more complex one.
+  \end{itemize}
+\end{frame}
+
+
+\end{document}

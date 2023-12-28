@@ -1,5 +1,5 @@
 ---
-title: hLrT / Bayes Factors
+title: Markov Chain Monte Carlo
 author: D. Miranda-Esquivel
 date: 2024-01-20
 
@@ -15,33 +15,29 @@ format:
 
 - In this section, we will review:
 
--- the hLrT and Bayes Factors
+-- the Markov Chain Monte Carlo
 
 
 
 ## Key Concepts
 
-- hierarchical tests 
-- [(h)/LrT](https://en.wikipedia.org/wiki/Likelihood-ratio_test)
-- [Bayes Factors](https://en.wikipedia.org/wiki/Bayes_factor)
+- Sampling
+- Markov Chain Monte Carlo
 
 ## Activities 
 
 
 - Review: 
 
-Thje wiki pages for:
-- hierarchical tests 
-- hLrT 
-- Bayes Factors
-
+Chapter 7: Markov Chain Monte Carlo [@hobbs2015] 
+Chapter 7: Markov Chain Monte Carlo [@kruscke2015]
 
 ## Readings
 
 ### Basic readings
 
--    [@Kass&Raftery1995](https://sites.stat.washington.edu/raftery/Research/PDF/kass1995.pdf)
-
+-  **Chapter 5**  [@hobbs2015] 
+-  **Chapter 5**  [@kruscke2015]
 
 
 ### Should read
