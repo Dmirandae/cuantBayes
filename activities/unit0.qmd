@@ -60,3 +60,7 @@ format:
 
 - **Chapter 1. Anderson's perspective on Science and Experimental design** [Read Online](https://drive.google.com/file/d/1Vng6xtgaa_wHkf0Wb1x48M9q5nS10HkJ/view?usp=sharing)
 
+- **[Storopoli (2022). Bayesian Statistics: a graduate course.]**(https://github.com/storopoli/Bayesian-Statistics/tree/main)
+
+- van de Schoot, R., Depaoli, S., King, R. et al. Bayesian statistics and modelling. Nat Rev Methods Primers 1, 1 (2021). https://doi.org/10.1038/s43586-020-00001-2
+
