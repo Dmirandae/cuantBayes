@@ -1,8 +1,9 @@
 ---
-title: Markov Chain Monte Carlo
+title: Examples
 author: D. Miranda-Esquivel
 date: 2024-01-20
 
+bibliography: ../bib/references.yml
 format:
   pdf:
     toc: true

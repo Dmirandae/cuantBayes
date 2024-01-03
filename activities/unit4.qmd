@@ -1,5 +1,5 @@
 ---
-title: hLrT / Bayes Factors
+title: hLrT - Bayes Factors
 author: D. Miranda-Esquivel
 date: 2024-01-20
 
