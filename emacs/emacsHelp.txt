@@ -1,0 +1,30 @@
+General
+
+    C-x C-c 	Quit Emacs
+    C-g 		Quit Current Command
+    M-x 		Run an Emacs Command
+
+File Operations
+
+    C-x C-f 	Open/Create File
+    C-x k 		Close File
+    C-x C-s 	Save File
+
+Editing
+
+    C-x u 		Undo
+    Shift-Del 	Cut
+    Ctrl-Ins 	Copy
+    Shift-Ins 	Paste
+    C-s 		Interactive Search
+    TAB 		Indent Current Line
+    C-M-\ 		Indent Selection
+
+Buffers
+
+    C-x b 		Switch Buffers
+    C-x C-b 	Get a List of Buffers
+    C-x o 		Switch to Other Window
+    C-x 1 		Close Other Window
+    C-x 2 		Split the Screen Horizontally
+    C-x 3 		Split the Screen Vertically
