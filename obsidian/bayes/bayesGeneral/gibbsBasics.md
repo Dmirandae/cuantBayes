@@ -23,10 +23,10 @@
 ## Gibbs: Sampling Procedure Algorithm
 
 1. **Initialization:**
-   - Begin with an initial value \( \mathbf{X}^{(0)} \).
+   - Begin with an initial value \( $\mathbf{X}^{(0)}$ \).
 
 2. **Iterative Sampling:**
-   - Obtain \( k \) samples of \( \mathbf{X} \) through sequential conditional sampling.
+   - Obtain \( k \) samples of \( $\mathbf{X}$ \) through sequential conditional sampling.
    - Update each component based on conditional distributions.
    - Use values from the previous sample for certain components.
 

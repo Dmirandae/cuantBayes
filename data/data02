@@ -8,4 +8,3 @@
 ## cat data02 | tr " " "\n" | grep -v "^\["  | grep -v "^$" | sort -n
 
 
-CFY7JU725W245VN5

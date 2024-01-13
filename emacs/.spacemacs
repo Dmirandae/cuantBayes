@@ -259,8 +259,8 @@ It should only modify the values of Spacemacs settings."
    ;; Default font or prioritized list of fonts. The `:size' can be specified as
    ;; a non-negative integer (pixel size), or a floating-point (point size).
    ;; Point size is recommended, because it's device independent. (default 10.0)
-   dotspacemacs-default-font '("Source Code Pro"
-                               :size 10.0
+   dotspacemacs-default-font '("Ubuntu mono"
+                               :size 16.0
                                :weight normal
                                :width normal)
 
@@ -573,6 +573,8 @@ Put your configuration code here, except for variables that should be set
 before packages are loaded."
 )
 
+;; DRME 2024 - 01 -08
+
 (desktop-save-mode 1)
 
 ;; (set-background-color "black")
@@ -580,6 +582,34 @@ before packages are loaded."
 
 ;; (after! doom-themes
 ;;  (set-background-color "pink"))
+
+;; Quarto load the library
+;;  (require 'quarto-mode)
+
+;; Note that the following is not necessary to run quarto-mode in .qmd files! It's merely illustrating
+;; how to associate different extensions to the mode.
+  (add-to-list 'auto-mode-alist '("\\.Rmd\\'" . poly-quarto-mode))
+  (add-to-list 'auto-mode-alist '("\\.qmd\\'" . poly-quarto-mode))
+
+;; Toggle between org & R modes.
+(defun toggle-org-R-mode ()
+  (interactive)
+  "Toggle mode between org-R modes"
+  (cond 
+   ((string= major-mode "org-mode")
+    (R-mode))
+   ((string= major-mode "ess-mode")
+    (org-mode))
+   )
+  )
+(global-set-key [f6] 'toggle-org-R-mode)
+
+
+;; (global-set-key (kbd "C-s M-e") 'ess-mode)
+(global-set-key [f7] 'ess-mode)
+
+
+;; END-DRME
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.

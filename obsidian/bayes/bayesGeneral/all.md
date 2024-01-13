@@ -1,0 +1,8 @@
+[[bayesSteps.md]]
+[[gibbsBasics.md]]
+[[markovBasics.md]]
+[[MCMCBasics.md]]
+[[metropolis-hastingsBasics.md]]
+[[probabilityConditional.md]]
+[[probabilityDistributions.md]]
+[[probabilityGeneral.md]]
