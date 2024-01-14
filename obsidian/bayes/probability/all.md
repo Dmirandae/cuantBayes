@@ -5,3 +5,4 @@
 [[Markov_Chain_Monte_Carlo.md]]
 [[Probability.md]]
 [[Review_of_some_general_Concepts.md]]
+[[R and Stats]]
