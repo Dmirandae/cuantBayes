@@ -96,3 +96,12 @@ Readings
 -   **Chapter 5. Sokal & Rohlf**
 
 -   **Ellison. 2004**. Bayesian inference in ecology. Ecology Letters. 7: 509--520 doi: 10.1111/j.1461-0248.2004.00603.x
+
+
+### Next: 
+
+[[Examples.md]]
+
+[[Likelihood.md]]
+
+[[Bayes.md]]

@@ -1,8 +1,0 @@
-[[Bayes.md]]
-[[Examples.md]]
-[[hLrT_-_Bayes_Factors.md]]
-[[Likelihood.md]]
-[[Markov_Chain_Monte_Carlo.md]]
-[[Probability.md]]
-[[Review_of_some_general_Concepts.md]]
-[[R and Stats]]

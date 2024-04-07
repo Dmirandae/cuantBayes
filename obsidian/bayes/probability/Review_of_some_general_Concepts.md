@@ -112,3 +112,8 @@ Readings
 -   **\[Storopoli (2022). Bayesian Statistics: a graduate course.\]**(https://github.com/storopoli/Bayesian-Statistics/tree/main)
 
 -   \*\*[van de Schoot, R., Depaoli, S., King, R. et al. Bayesian statistics and modelling. Nat Rev Methods Primers 1, 1 (2021).](https://doi.org/10.1038/s43586-020-00001-2)
+
+
+### Next:
+
+[[Probability.md]]

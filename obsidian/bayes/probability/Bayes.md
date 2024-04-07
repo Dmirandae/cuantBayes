@@ -61,6 +61,8 @@ Activities
 
 Chapter 5: Likelihood [@hobbs2015] Chapter 5: Bayes' Rule [@kruscke2015]
 
+see: [[Likelihood.md]]
+
 Readings
 --------
 
@@ -72,3 +74,14 @@ Readings
 ### Should read
 
 -   **Ellison. 2004**. Bayesian inference in ecology. Ecology Letters. 7: 509--520 doi: 10.1111/j.1461-0248.2004.00603.x
+
+
+
+### Next:
+
+
+[[hLrT_-_Bayes_Factors.md]]
+
+[[Markov_Chain_Monte_Carlo.md]]
+
+
