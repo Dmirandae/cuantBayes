@@ -1,0 +1,90 @@
+---
+title: Bayesian Analysis
+author: D. Miranda-Esquivel
+date: 2024-01-20
+
+format:
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+---
+
+## Review of Basic Probability Concepts
+
+### Objectives
+
+* Review very basic probability concepts and distributions (binomial, dirichlet, gamma, exponential, log-normal).
+
+### Readings
+
+* **ASA statement:** [Read Online](https://www.tandfonline.com/doi/full/10.1080/00031305.2019.1583913)
+* Bodine et al Unit 3
+* Sokal & Rohlf Chapter 5
+* Anderson chapter 1
+
+## Probability Concepts
+
+### Objectives
+
+* Review basic probability concepts.
+
+### References
+
+* Kruschke :: Probability: Chapters 2/4
+
+## Probability Topics
+
+* Conditional Probability
+
+## Statistical Concepts
+
+* Likelihood
+
+## Bayesian Analysis by Kruschke
+
+### Objectives
+
+* Review the basics of Bayesian analysis.
+
+### References
+
+* Kruschke :: Bayes: Chapter 5
+
+### Classical Statistics in Bayesian Mode
+
+## Monte Carlo Methods
+
+### Reference
+
+* Chapter 7: MC Kruschke
+
+## Modeling in Kruschke
+
+### References
+
+* Kruschke :: Modelling: Chapters 9/10
+
+## Reference Texts
+
+* [@kruschke2015doing](https://doi.org/10.1016/C2012-0-05863-4)
+
+* [@hobbsNdHooten](https://press.princeton.edu/books/hardcover/9780691159287/bayesian-models)
+
+## Additional/Complementary Readings
+
+* Doing Bayesian Data Analysis in brms and the tidyverse. Version 1.1.0. A Solomon Kurz https://bookdown.org/content/3686/
+
+## Bibliography
+
+* [@kruschke2015doing]: Doing Bayesian Data Analysis. [Elsevier](https://shop.elsevier.com/books/doing-bayesian-data-analysis/kruschke/978-0-12-405888-0).
+
+* What's New in 2nd Edition https://nyu-cdsc.github.io/learningr/assets/kruschke_bayesian_in_R.pdf
+
+* [@hobbsNdHooten]: Bayesian Models: A Guide to the Use of Bayesian Statistics in Science, Engineering, and Economics. [Princeton University Press](https://press.princeton.edu/books/hardcover/9780691159287/bayesian-models).
+
+## Software
+
+* R https://www.r-project.org/
+* Stan https://mc-stan.org/
+* Julia https://julialang.org/
