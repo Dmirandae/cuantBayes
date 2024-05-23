@@ -23,6 +23,14 @@ rnorm(n=10)
 
 rnorm(n=10)
 
+
+
+set.seed(666)
+
+rnorm(n=10)
+
+rnorm(n=10)
+
 rnorm(n=10, mean = 0, sd = 1)
 
 
