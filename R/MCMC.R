@@ -126,4 +126,24 @@ sample_from_slice <- function(target_distribution, current_state, vertical_posit
 
 ######
 
+## Basic MCMC
 
+# Define transition matrix
+transition_matrix <- matrix(c(0.7, 0.3, 0.2, 0.8), 
+                            nrow = 2, byrow = TRUE)
+
+# Initial state
+initial_state <- c(0.5, 0.5)
+
+# Simulate Markov Chain
+set.seed(123)
+num_steps <- 10
+states <- matrix(0, nrow = num_steps, ncol = 2)
+
+for (i in 1:num_steps) {
+  if (i == 1) states[i, ] <- initial_state
+  else states[i, ] <- states[i - 1, ] %*% transition_matrix
+}
+
+# Display the result
+print(states)
