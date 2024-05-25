@@ -264,6 +264,63 @@ mcmc_samples <- metropolis_hastings(target_distribution, proposal_distribution, 
 # Visualize the results (optional)
 hist(mcmc_samples, main = "Metropolis-Hastings MCMC Samples")
 
+## same but heavily commented
+
+
+# Define the target distribution function (replace with your desired distribution)
+target_distribution <- function(x) {
+  # Example bimodal distribution
+  weight1 <- 0.6
+  weight2 <- 0.4
+  norm1 <- dnorm(x, mean = -2, sd = 1)
+  norm2 <- dnorm(x, mean = 2, sd = 1)
+  return(weight1 * norm1 + weight2 * norm2)
+}
+
+# Define proposal distribution (adjust standard deviation for Metropolis-Hastings and MALA)
+proposal_distribution <- function(current_state) {
+  rnorm(1, mean = current_state, sd = 0.1)
+}
+
+# Set the number of samples
+num_samples <- 1000
+
+# Initial states for each function
+initial_states <- list(
+  metropolis_hastings = 0,
+  gibbs_sampling = NA,  # Not applicable for this example
+  mala = 0,
+  pseudo_marginal = 0,
+  slice_sampling = 0
+)
+
+# Simulated data sets (empty lists to be filled)
+simulated_data <- list()
+
+# Run MCMC simulations for each function (modify as needed)
+for (function_name in names(initial_states)) {
+  # Check if the function requires an initial state
+  if (!is.na(initial_states[[function_name]])) {
+    # Define arguments based on the function
+    if (function_name == "metropolis_hastings" | function_name == "mala") {
+      # Construct function call for Metropolis-Hastings or MALA (require proposal distribution)
+      simulated_data[[function_name]] <- eval(parse(text = paste0(function_name, "(target_distribution, proposal_distribution, ", num_samples, ")")))
+    } else {
+      # Construct function call for other functions (don't include proposal distribution)
+      simulated_data[[function_name]] <- eval(parse(text = paste0(function_name, "(target_distribution, ", num_samples, ")")))
+    }
+  } else {
+    # Handle cases where initial state is not applicable (e.g., Gibbs sampling)
+    simulated_data[[function_name]] <- NA
+  }
+}
+
+# Example usage: Access simulated data from a specific function
+metropolis_samples <- simulated_data[["metropolis_hastings"]]
+
+# Visualize the results (optional)
+hist(metropolis_samples, main = "Metropolis-Hastings MCMC Samples")
+
 
 
 ######
