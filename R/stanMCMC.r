@@ -137,14 +137,34 @@ y_fit
 
 x
 y
+
+
+###https://medium.com/@josef.waples/understanding-bayesian-linear-regression-model-output-in-r-using-mtcars-0bf2a098e20b
+
+library(rstanarm)
+
+data(mtcars)
+stan_glm(mpg ~ wt, data = mtcars)
+
+ggplot(mtcars, aes(x = wt, y = mpg)) +
+  geom_point() +
+  geom_abline(intercept = 37.3, slope = -5.3, color = '#1e466e') +
+  ggtitle("mtcars") +
+  labs(subtitle = "mpg ~ wt") 
+
+
                                         # Plot original data and fitted values
 
+plot(x,y)
 
+plot(x,y)
+abline(y_fit)
 
+                                        #
 library(ggplot2)
-ggplot((x = x, y = y)) +  geom_point(color = "blue") +
-  geom_line(data(y = y_fit), color = "red", linetype = "dashed") +
-  labs(title = "Linear Regression Results", x = "Predictor (x)", y = "Outcome (y)")
+#ggplot((x = x, y = y)) +  geom_point(color = "blue") +
+#  geom_line(data(y = y_fit), color = "red", linetype = "dashed") +
+#  labs(title = "Linear Regression Results", x = "Predictor (x)", y = "Outcome (y)")
 
 
 ## Gemini
