@@ -1,7 +1,20 @@
 
 # Load required libraries
 
+library(BayesFactor)
 library(bayeslm)
+library(dplyr)
+library(ggplot2)
+library(mcmcr)
+library(rstan)
+library(rstanarm)
+
+
+
+
+## data for simple models
+
+
 
 p = 20
 n = 100
@@ -31,7 +44,7 @@ data = data.frame(x = x, y = y)
 
 block_vec = rep(1, p) # slice-within-Gibbs sampler, put every coefficient in its own block
 
-fitOLS = lm(y~x-1)
+fitOLS = lm(y~x-1)  ## standard lm
 
                                         # call the function using formulas
 fita = bayeslm(y ~ x, prior = 'horseshoe', 
@@ -42,7 +55,7 @@ summary(fita$beta)
 
 ?bayeslm::bayeslm()
 
-
+## Gemini comments
 #~ If you need to perform more complex Bayesian analysis or have specific 
 #~ prior distributions in mind, Stan is likely the better choice. If 
 #~ you're looking for a simpler solution within R for basic Bayesian 
@@ -54,15 +67,19 @@ library(rstan)
 
 # Simulate data
 set.seed(123)
-N <- 100
-x <- runif(N, 1, 10)
-beta <- 2  # True slope
+
+N     <- 100
+x     <- runif(N, 1, 10)
+beta  <- 2  # True slope
 alpha <- 3  # True intercept
 sigma <- 1  # True standard deviation
 y <- alpha + beta * x + rnorm(N, mean = 0, sd = sigma)
 
 # Stan model code
-stan_code <- "
+stancode_2 <- 'data {real y_mean;} parameters {real y;} model {y ~ normal(y_mean,1);}'
+
+
+stancode_1 <- "
 data {
   int<lower=1> N;
   vector[N] x;
@@ -83,22 +100,35 @@ model {
 rstan_options(threads_per_chain = 1)
 
 
-stancode <- 'data {real y_mean;} parameters {real y;} model {y ~ normal(y_mean,1);}'
-mod <- stan_model(model_code = stancode, verbose = TRUE)
-fit <- sampling(mod, data = list(y_mean = 0))
-fit2 <- sampling(mod, data = list(y_mean = 5))
-## End(Not run)
 
-# Compile the Stan model
+# Compile the Stan model 1  / fit
+## simple model / data
 
 ?stan_model
 
 
 ?stan_model()
 
-model <- stan_model(model_code = stan_code)
 
-# Fit the model to the data
+mod_1 <- stan_model(model_code = stancode_1, verbose = TRUE)
+
+
+fit  <- sampling(mod_1, data = list(y_mean = 0))
+
+fit2 <- sampling(mod_1, data = list(y_mean = 5))
+
+summary(fit)
+
+summary(fit2)
+
+
+
+# Compile the Stan model 2  / fit
+##  simple model / data
+
+model <- stan_model(model_code = stancode_2)
+
+# Fit the model to the data 
 fit <- sampling(model, data = list(N = N, x = x, y = y), chains = 4, iter = 2000)
 
 # Summarize the posterior distribution
@@ -143,6 +173,13 @@ y
 
 library(rstanarm)
 
+
+
+                                        # Plot original data and fitted values
+
+                                        #
+library(ggplot2)
+
 data(mtcars)
 stan_glm(mpg ~ wt, data = mtcars)
 
@@ -152,19 +189,6 @@ ggplot(mtcars, aes(x = wt, y = mpg)) +
   ggtitle("mtcars") +
   labs(subtitle = "mpg ~ wt") 
 
-
-                                        # Plot original data and fitted values
-
-plot(x,y)
-
-plot(x,y)
-abline(y_fit)
-
-                                        #
-library(ggplot2)
-#ggplot((x = x, y = y)) +  geom_point(color = "blue") +
-#  geom_line(data(y = y_fit), color = "red", linetype = "dashed") +
-#  labs(title = "Linear Regression Results", x = "Predictor (x)", y = "Outcome (y)")
 
 
 ## Gemini
