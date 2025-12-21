@@ -1,10 +1,10 @@
 
 # cuantBayes
-"This is the repository for the component: 'Bayesian analysis' of the course 'Biología cuantitativa', graduate program UIS."
+"This is the repository for the component: 'Bayesian analysis'."
 
-## Software used
+## Software used:
 
 - Text files edited using [Emacs](https://www.gnu.org/software/emacs/) 
 - Render with [xelatex](https://tug.org/texlive/) via [Quarto](quarto.org) and [Pandoc](https://pandoc.org/)
-- Code generated using [ChatGPT](https://www.openai.com/)
+- Code generated using [Ollama::qwen3-coder:latest](https://www.ollama.com/)
 - [R](https://www.r-project.org/) / [julia](https://julialang.org/) via Emacs
